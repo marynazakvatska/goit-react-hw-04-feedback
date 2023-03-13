@@ -15,16 +15,13 @@ export  function App()  {
   const [good, setGood] = useState(0)
   const [neutral, setNeutral] = useState(0)
   const [bad, setBad] = useState(0)
-  const [state/* , setState */] = useState({
-      good: 0,
-        neutral: 0,
-        bad: 0
-  })
 
-  const increment = (state) => {
-    console.log(state)
+  const options = {good, bad, neutral}
 
-    switch (state) {
+  const increment = (options) => {
+ 
+
+    switch (options) {
       case 'good':
         setGood(good + 1);
         break;
@@ -66,7 +63,7 @@ export  function App()  {
         <Section title="Please leave feedback">
           <FeedbackOptions 
         
-     options={state} 
+     options={options} 
          onLeaveFeedback= {increment} />
                  
           </Section>
