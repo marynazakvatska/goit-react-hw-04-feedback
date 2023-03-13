@@ -19,7 +19,7 @@ export  function App()  {
   const options = {good, bad, neutral}
 
   const increment = (options) => {
- 
+ console.log(options)
 
     switch (options) {
       case 'good':
@@ -92,11 +92,16 @@ export  function App()  {
 }
 
 App.propTypes = {
-     options: PropTypes.object,
-  countTotalFeedback: PropTypes.func,
+
+  options:PropTypes.objectOf(PropTypes.numbers),
+  good: PropTypes.number,
+  neutral: PropTypes.number,
+  bad: PropTypes.number,
+  total: PropTypes.func,
   positivePercentage: PropTypes.func,
-  increment: PropTypes.func,
-   
+  title: PropTypes.string,
+  message: PropTypes.string,
+    onLeaveFeedback: PropTypes.func,
 }
 
 
