@@ -97,11 +97,10 @@ App.propTypes = {
   good: PropTypes.number,
   neutral: PropTypes.number,
   bad: PropTypes.number,
-  total: PropTypes.func,
-  positivePercentage: PropTypes.number,
-  title: PropTypes.string,
-  message: PropTypes.string,
-    onLeaveFeedback: PropTypes.func,
+  countTotalFeedback: PropTypes.func,
+  positivePercentage: PropTypes.func,
+  increment: PropTypes.func,
+  
 }
 
 
