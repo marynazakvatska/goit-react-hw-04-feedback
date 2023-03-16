@@ -91,17 +91,7 @@ export  function App()  {
          
 }
 
-App.propTypes = {
 
-  options:PropTypes.objectOf(PropTypes.numbers),
-  good: PropTypes.number,
-  neutral: PropTypes.number,
-  bad: PropTypes.number,
-  countTotalFeedback: PropTypes.func,
-  positivePercentage: PropTypes.func,
-  increment: PropTypes.func,
-  
-}
 
 
 
